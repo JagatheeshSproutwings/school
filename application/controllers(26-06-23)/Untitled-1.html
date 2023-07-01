@@ -1,0 +1,174 @@
+<section id="modal-events">
+	<div class="row">
+		<div class="col-12">
+			<div class="card">
+				<div class="card-header">
+					<h4 class="card-title">Modal Events</h4>
+					<a class="heading-elements-toggle"><i class="fa fa-ellipsis font-medium-3"></i></a>
+					<div class="heading-elements">
+						<ul class="list-inline mb-0">
+							<li><a data-action="collapse"><i class="feather icon-minus"></i></a></li>
+							<li><a data-action="reload"><i class="feather icon-rotate-cw"></i></a></li>
+							<li><a data-action="expand"><i class="feather icon-maximize"></i></a></li>
+							<li><a data-action="close"><i class="feather icon-x"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="card-content collapse show">
+					<div class="card-body">
+						<p>Bootstrap’s modal class exposes a few events for hooking into modal functionality. All modal events are fired at the modal itself</p>
+						<div class="row my-2">
+							<div class="col-md-6 col-sm-12">
+								<div class="form-group">
+									<h5>OnShow Modal Event</h5>
+									<p>This event fires immediately when the show instance method is called. If caused by a click, the clicked element is available as the relatedTarget property of the event.</p>
+									<!-- Button trigger modal -->
+									<button type="button" class="btn btn-outline-danger block btn-lg" data-toggle="modal" id="onshowbtn" data-target="#onshow">
+										Launch Modal
+									</button>
+
+									<!-- Modal -->
+									<div class="modal fade text-left" id="onshow" tabindex="-1" role="dialog" aria-labelledby="myModalLabel21" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h4 class="modal-title" id="myModalLabel21">Basic Modal</h4>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											  <span aria-hidden="true">×</span>
+											</button>
+										  </div>
+										  <div class="modal-body">
+											<h5>Check First Paragraph</h5>
+											<p>Oat cake ice cream candy chocolate cake chocolate cake cotton candy dragée apple pie. Brownie carrot cake candy canes bonbon fruitcake topping halvah. Cake sweet roll cake cheesecake cookie chocolate cake liquorice. Apple pie sugar plum powder donut soufflé.</p>
+											<p>Sweet roll biscuit donut cake gingerbread. Chocolate cupcake chocolate bar ice cream. Danish candy cake.</p>
+											<hr>
+											<h5>Some More Text</h5>
+											<p>Cupcake sugar plum dessert tart powder chocolate fruitcake jelly. Tootsie roll bonbon toffee danish. Biscuit sweet cake gummies danish. Tootsie roll cotton candy tiramisu lollipop candy cookie biscuit pie.</p>
+										  </div>
+										  <div class="modal-footer">
+											<button type="button" class="btn grey btn-outline-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-outline-primary">Save changes</button>
+										  </div>
+										</div>
+									  </div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-12">
+								<div class="form-group">
+									<h5>OnShown Modal Event</h5>
+									<p>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the relatedTarget property of the event.</p>
+									<!-- Button trigger modal -->
+									<button type="button" class="btn btn-outline-danger block btn-lg" data-toggle="modal" id="onshownbtn" data-target="#onshown">
+										Launch Modal
+									</button>
+
+									<!-- Modal -->
+									<div class="modal fade text-left" id="onshown" tabindex="-1" role="dialog" aria-labelledby="myModalLabel22" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h4 class="modal-title" id="myModalLabel22">Basic Modal</h4>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											  <span aria-hidden="true">×</span>
+											</button>
+										  </div>
+										  <div class="modal-body">
+											<h5>Check First Paragraph</h5>
+											<p>Oat cake ice cream candy chocolate cake chocolate cake cotton candy dragée apple pie. Brownie carrot cake candy canes bonbon fruitcake topping halvah. Cake sweet roll cake cheesecake cookie chocolate cake liquorice. Apple pie sugar plum powder donut soufflé.</p>
+											<p>Sweet roll biscuit donut cake gingerbread. Chocolate cupcake chocolate bar ice cream. Danish candy cake.</p>
+											<hr>
+											<h5>Some More Text</h5>
+											<p>Cupcake sugar plum dessert tart powder chocolate fruitcake jelly. Tootsie roll bonbon toffee danish. Biscuit sweet cake gummies danish. Tootsie roll cotton candy tiramisu lollipop candy cookie biscuit pie.</p>
+										  </div>
+										  <div class="modal-footer">
+											<button type="button" class="btn grey btn-outline-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-outline-primary">Save changes</button>
+										  </div>
+										</div>
+									  </div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-12">
+								<div class="form-group">
+									<h5>OnHide Modal Event</h5>
+									<p>This event is fired immediately when the hide instance method has been called.</p>
+									<!-- Button trigger modal -->
+									<button type="button" class="btn btn-outline-danger block btn-lg" data-toggle="modal" id="onhidebtn" data-target="#onhide">
+										Launch Modal
+									</button>
+
+									<!-- Modal -->
+									<div class="modal fade text-left" id="onhide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel23" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h4 class="modal-title" id="myModalLabel23"><i class="fa fa-tree"></i> Basic Modal</h4>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											  <span aria-hidden="true">×</span>
+											</button>
+										  </div>
+										  <div class="modal-body">
+											<h5><i class="fa fa-arrow-right"></i> Check First Paragraph</h5>
+											<p>Oat cake ice cream candy chocolate cake chocolate cake cotton candy dragée apple pie. Brownie carrot cake candy canes bonbon fruitcake topping halvah. Cake sweet roll cake cheesecake cookie chocolate cake liquorice. Apple pie sugar plum powder donut soufflé.</p>
+											<p>Sweet roll biscuit donut cake gingerbread. Chocolate cupcake chocolate bar ice cream. Danish candy cake.</p>
+											<hr>
+											<h5><i class="fa fa-lightbulb-o"></i> Some More Text</h5>
+											<p>Cupcake sugar plum dessert tart powder chocolate fruitcake jelly. Tootsie roll bonbon toffee danish. Biscuit sweet cake gummies danish. Tootsie roll cotton candy tiramisu lollipop candy cookie biscuit pie.</p>
+											<div class="alert alert-success" role="alert">
+												<span class="text-bold-600">Well done!</span> You successfully read this important alert message.
+											</div>
+										  </div>
+										  <div class="modal-footer">
+											<button type="button" class="btn grey btn-outline-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-outline-primary">Save changes</button>
+										  </div>
+										</div>
+									  </div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-12">
+								<div class="form-group">
+									<h5>OnHidden Modal Event</h5>
+									<p>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).</p>
+									<!-- Button trigger modal -->
+									<button type="button" class="btn btn-outline-danger block btn-lg" data-toggle="modal" id="onhiddenbtn" data-target="#onhidden">
+										Launch Modal
+									</button>
+
+									<!-- Modal -->
+									<div class="modal fade text-left" id="onhidden" tabindex="-1" role="dialog" aria-labelledby="myModalLabel24" aria-hidden="true">
+									  <div class="modal-dialog" role="document">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h4 class="modal-title" id="myModalLabel24">Basic Modal</h4>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											  <span aria-hidden="true">×</span>
+											</button>
+										  </div>
+										  <div class="modal-body">
+											<h5>Check First Paragraph</h5>
+											<p>Oat cake ice cream candy chocolate cake chocolate cake cotton candy dragée apple pie. Brownie carrot cake candy canes bonbon fruitcake topping halvah. Cake sweet roll cake cheesecake cookie chocolate cake liquorice. Apple pie sugar plum powder donut soufflé.</p>
+											<p>Sweet roll biscuit donut cake gingerbread. Chocolate cupcake chocolate bar ice cream. Danish candy cake.</p>
+											<hr>
+											<h5>Some More Text</h5>
+											<p>Cupcake sugar plum dessert tart powder chocolate fruitcake jelly. Tootsie roll bonbon toffee danish. Biscuit sweet cake gummies danish. Tootsie roll cotton candy tiramisu lollipop candy cookie biscuit pie.</p>
+										  </div>
+										  <div class="modal-footer">
+											<button type="button" class="btn grey btn-outline-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-outline-primary">Save changes</button>
+										  </div>
+										</div>
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
